@@ -7,6 +7,7 @@ export const AuthService = {
       console.log(response.data);
       return response.data;
     } catch (error) {
+      toast.error(error?.response.data?.message || "Login failed");
       console.log("Error logging in:", error);
     }
   },

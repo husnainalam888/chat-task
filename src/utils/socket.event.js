@@ -1,14 +1,16 @@
+import useStore from "@/lib/store";
 import { getSocket } from "./socket";
 
 export const initializeSocketListeners = () => {
   const socket = getSocket();
+  const { addMessage } = useStore.getState();
 
-  socket.on("connectUser", (data) => {
-    console.log("User Connected:", data);
-  });
+  let user = JSON.parse(localStorage.getItem("user"));
+  socket.emit("connectUser", user?.id);
 
-  socket.on("sendMessage", (message) => {
-    console.log("Message Sent:", message);
+  socket.on("receiveMessage", (message) => {
+    console.log("Message received:", message);
+    addMessage(message.conversationId, message);
   });
 
   socket.on("messageDelivered", (message) => {

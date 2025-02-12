@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import { AuthController } from "../controllers/authController";
+import { AuthController } from "../../controllers/authController";
 
 const AuthForm = ({ type }) => {
   const isLogin = type === "login";

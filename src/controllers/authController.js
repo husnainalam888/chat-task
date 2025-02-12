@@ -5,9 +5,15 @@ export const AuthController = {
   login: async (data, router) => {
     try {
       const response = await AuthService.login(data);
-      localStorage.setItem("token", response.token);
-      toast.success(JSON.stringify(response.message));
-      router.push("/dashboard");
+      console.log("response : ", response);
+      if (response?.data?.access_token) {
+        localStorage.setItem("token", response.data.access_token);
+        localStorage.setItem("user", JSON.stringify(response.data));
+        toast.success(JSON.stringify(response.message));
+        router.push("/dashboard");
+      } else {
+        toast.error(response.message);
+      }
     } catch (error) {
       console.log("Error logging in:", error);
       toast.error(error.response?.data?.message || "Login failed");

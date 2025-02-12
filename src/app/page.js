@@ -8,6 +8,11 @@ export default function Home() {
   useEffect(() => {
     getSocket();
     initializeSocketListeners();
+    if (localStorage.getItem("token")) {
+      window.location.href = "/dashboard";
+    } else {
+      window.location.href = "/login";
+    }
 
     return () => {
       disconnectSocket();
