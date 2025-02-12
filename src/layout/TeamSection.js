@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 
-import TeamsList from "../team/TeamsTable";
+import TeamsList from "../components/team/TeamsTable";
 import useTeams from "@/hooks/useTeams";
 import { PlusIcon } from "lucide-react";
-import CreateTeamModal from "../modal/CreateTeamModal";
-import InviteUserModal from "../modal/InviteUserModal";
+import CreateTeamModal from "../components/modal/CreateTeamModal";
+import InviteUserModal from "../components/modal/InviteUserModal";
 import useInvitation from "@/hooks/useInvitation";
 
 const TeamSection = () => {

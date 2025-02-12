@@ -1,5 +1,5 @@
-import SidebarLayout from "@/components/layout/SidebarLayout";
-import TaskSection from "@/components/layout/TaskSection";
+import SidebarLayout from "../../layout/SidebarLayout";
+import TaskSection from "../../layout/TaskSection";
 import React from "react";
 
 const page = () => {

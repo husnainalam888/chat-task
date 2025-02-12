@@ -1,5 +1,5 @@
-import InvitationSection from "@/components/layout/InvitationSection";
-import SidebarLayout from "@/components/layout/SidebarLayout";
+import InvitationSection from "../../layout/InvitationSection";
+import SidebarLayout from "../../layout/SidebarLayout";
 import React from "react";
 
 const page = () => {

@@ -2,8 +2,8 @@
 import useTask from "@/hooks/useTask";
 import { PlusIcon } from "lucide-react";
 import React from "react";
-import CreateTaskModal from "../modal/CreateTaskModal";
-import TaskList from "../task/TaskList";
+import CreateTaskModal from "../components/modal/CreateTaskModal";
+import TaskList from "../components/task/TaskList";
 
 const TaskSection = () => {
   const {

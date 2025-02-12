@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import ChatList from "../chat/ChatList";
+import ChatList from "../components/chat/ChatList";
 import { fetchChats } from "@/controllers/chatController";
-import MessageSection from "../chat/MessageSection";
+import MessageSection from "../components/chat/MessageSection";
 import useStore from "@/lib/store";
 
 const ChatSection = () => {

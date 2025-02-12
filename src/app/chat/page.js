@@ -1,5 +1,5 @@
-import ChatSection from "@/components/layout/ChatSection";
-import SidebarLayout from "@/components/layout/SidebarLayout";
+import ChatSection from "../../layout/ChatSection";
+import SidebarLayout from "../../layout/SidebarLayout";
 import React from "react";
 
 const page = () => {

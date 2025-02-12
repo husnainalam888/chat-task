@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import SidebarLayout from "./SidebarLayout";
-import InvitationsList from "../invitation/invitationsList";
+import InvitationsList from "../components/invitation/invitationsList";
 import useInvitation from "@/hooks/useInvitation";
 import { PlusCircleIcon, PlusIcon } from "lucide-react";
-import InviteUserModal from "../modal/InviteUserModal";
+import InviteUserModal from "../components/modal/InviteUserModal";
 
 const InvitationSection = () => {
   const {

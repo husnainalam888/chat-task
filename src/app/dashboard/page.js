@@ -12,7 +12,7 @@ import { Truculenta } from "next/font/google";
 import { Button, Menu } from "antd";
 import { MenuIcon, PlusIcon } from "lucide-react";
 import AddTeamModal from "@/components/team/AddTeamModal";
-import ChatSection from "@/components/layout/ChatSection";
+import ChatSection from "../../layout/ChatSection";
 import { getSocket } from "@/utils/socket";
 import { initializeSocketListeners } from "@/utils/socket.event";
 

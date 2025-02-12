@@ -9,7 +9,7 @@ export default function Home() {
     getSocket();
     initializeSocketListeners();
     if (localStorage.getItem("token")) {
-      window.location.href = "/dashboard";
+      window.location.href = "/user";
     } else {
       window.location.href = "/login";
     }
